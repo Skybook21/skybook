@@ -1278,11 +1278,11 @@ img { max-width: 100%; display: block; }
    ============================================ */
 .update-badge {
   position: fixed;
-  top: calc(var(--nav-height) - 15px);
+  top: calc(var(--nav-height) - 28px);
   right: 16px;
   z-index: 950;
-  padding: 6px 14px;
-  font-size: 0.75rem;
+  padding: 5px 12px;
+  font-size: 0.65rem;
   color: var(--text-secondary, #8a7f70);
   background: rgba(250, 246, 240, 0.85);
   backdrop-filter: blur(10px);
@@ -1303,9 +1303,10 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 480px) {
   .update-badge {
-    right: 10px;
-    font-size: 0.68rem;
-    padding: 5px 10px;
+    right: 52px;
+    top: calc(var(--nav-height) - 25px);
+    font-size: 0.6rem;
+    padding: 4px 9px;
   }
 }
 
