@@ -1274,39 +1274,33 @@ img { max-width: 100%; display: block; }
 }
 
 /* ============================================
-   导航栏右下角更新时间徽章
+   导航栏右下角更新时间（纯文字）
    ============================================ */
+.nav-container {
+  position: relative;
+}
+
 .update-badge {
-  position: fixed;
-  top: calc(var(--nav-height) - 28px);
-  right: 16px;
-  z-index: 1100;
-  padding: 5px 12px;
+  position: absolute;
+  right: 0;
+  bottom: 3px;
   font-size: 0.65rem;
+  line-height: 1;
   color: var(--text-secondary, #8a7f70);
-  background: rgba(250, 246, 240, 0.85);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(232, 223, 208, 0.8);
-  border-radius: 999px;
-  box-shadow: 0 2px 12px rgba(160, 140, 110, 0.15);
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
   white-space: nowrap;
   user-select: none;
   pointer-events: none;
-  transition: opacity 0.3s ease;
-}
-
-.update-badge:not(:empty)::before {
-  content: '🕒';
-  margin-right: 5px;
 }
 
 @media (max-width: 480px) {
   .update-badge {
     right: 52px;
-    top: calc(var(--nav-height) - 25px);
     font-size: 0.6rem;
-    padding: 4px 9px;
+    bottom: 4px;
   }
 }
 
