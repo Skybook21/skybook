@@ -1274,7 +1274,8 @@ img { max-width: 100%; display: block; }
 }
 
 /* ============================================
-   导航栏右下角更新时间（纯文字）
+   导航栏左下角更新时间（纯文字）
+   左端与导航栏 Logo 左端对齐
    ============================================ */
 .nav-container {
   position: relative;
@@ -1282,7 +1283,7 @@ img { max-width: 100%; display: block; }
 
 .update-badge {
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 3px;
   font-size: 0.65rem;
   line-height: 1;
@@ -1298,7 +1299,7 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 480px) {
   .update-badge {
-    right: 52px;
+    left: 0;
     font-size: 0.6rem;
     bottom: 4px;
   }
