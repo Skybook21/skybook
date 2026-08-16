@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>先祖回忆攻略 | 光遇攻略站</title>
+  <meta name="description" content="光遇全地图先祖回忆攻略，包含位置、动作奖励与解锁路线。">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="light-particles" id="particles"></div>
+
+<!-- 导航栏 -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2C9.5 2 8 4 8 6.5c0 1 .3 1.8.7 2.5C7.5 9.5 6 11.5 6 14c0 3.3 2.7 6 6 6s6-2.7 6-6c0-2.5-1.5-4.5-2.7-5 .4-.7.7-1.5.7-2.5C16 4 14.5 2 12 2zm0 2c1 0 2 1 2 2.5 0 .5-.1 1-.4 1.5l-.5 1 1 .5c1 .5 1.9 1.7 1.9 4.5 0 2.2-1.8 4-4 4s-4-1.8-4-4c0-2.8.9-4 1.9-4.5l1-.5-.5-1c-.3-.5-.4-1-.4-1.5C10 5 11 4 12 4z"/></svg>
+      </span>
+      光遇攻略站
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="candles.html">每日蜡烛</a></li>
+      <li><a href="spirits.html" class="active">先祖回忆</a></li>
+      <li><a href="seasonal.html">季节活动</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- 页面头部 -->
+<header class="page-header">
+  <h1>先祖回忆攻略</h1>
+  <p>找回散落在各地图的先祖记忆，解锁专属表情与装扮</p>
+</header>
+
+<!-- 标签导航 -->
+<section class="section" style="padding-top: var(--space-2xl);">
+  <div class="container">
+    <div class="tab-nav" id="tabNav">
+      <button class="tab-btn active" data-tab="dawn"><span class="tab-dot" style="--tab-color: #F4C97A;"></span>晨岛</button>
+      <button class="tab-btn" data-tab="prairie"><span class="tab-dot" style="--tab-color: #8DD4A8;"></span>云野</button>
+      <button class="tab-btn" data-tab="forest"><span class="tab-dot" style="--tab-color: #6BB89A;"></span>雨林</button>
+      <button class="tab-btn" data-tab="valley"><span class="tab-dot" style="--tab-color: #E89B8B;"></span>霞谷</button>
+      <button class="tab-btn" data-tab="wasteland"><span class="tab-dot" style="--tab-color: #C49968;"></span>暮土</button>
+      <button class="tab-btn" data-tab="vault"><span class="tab-dot" style="--tab-color: #B8A8D4;"></span>禁阁</button>
+    </div>
+
+    <!-- 晨岛先祖 -->
+    <div class="tab-content active" id="tab-dawn">
+      <div class="spirit-grid">
+        <div class="spirit-card" style="--spirit-color: rgba(244, 201, 122, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar">
+              <svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg>
+            </div>
+            <div>
+              <h3>点头先祖</h3>
+              <p class="spirit-type">基础表情 · 点头</p>
+            </div>
+          </div>
+          <p class="spirit-desc">位于晨岛沙滩右侧的沙丘上。找到发光的石碑后点燃蜡烛，跟随蓝色光点重温记忆即可解锁。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 点头表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 棉裤</span>
+          </div>
+        </div>
+
+        <div class="spirit-card" style="--spirit-color: rgba(244, 201, 122, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar">
+              <svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg>
+            </div>
+            <div>
+              <h3>拒绝先祖</h3>
+              <p class="spirit-type">基础表情 · 摇头拒绝</p>
+            </div>
+          </div>
+          <p class="spirit-desc">位于晨岛蝴蝶洞穴内。进入洞穴后向左走，在深处水池旁找到先祖石碑。点燃后跟随记忆路线。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 摇头表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 发型</span>
+          </div>
+        </div>
+
+        <div class="spirit-card" style="--spirit-color: rgba(244, 201, 122, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar">
+              <svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg>
+            </div>
+            <div>
+              <h3>跟随先祖</h3>
+              <p class="spirit-type">基础表情 · 跟随手势</p>
+            </div>
+          </div>
+          <p class="spirit-desc">位于晨岛神殿前方的断桥上。需要一定飞行能力才能到达。找到石碑后需要持续飞行跟随记忆。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 跟随表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 斗篷</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 云野先祖 -->
+    <div class="tab-content" id="tab-prairie">
+      <div class="spirit-grid">
+        <div class="spirit-card" style="--spirit-color: rgba(141, 212, 168, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg></div>
+            <div><h3>举烛先祖</h3><p class="spirit-type">基础表情 · 举烛</p></div>
+          </div>
+          <p class="spirit-desc">位于蝴蝶平原中心偏左的小丘上。最易找到的先祖之一，新手必解。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 举烛表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 管裤</span>
+          </div>
+        </div>
+
+        <div class="spirit-card" style="--spirit-color: rgba(141, 212, 168, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg></div>
+            <div><h3>欢呼先祖</h3><p class="spirit-type">基础表情 · 双手欢呼</p></div>
+          </div>
+          <p class="spirit-desc">位于右侧三塔区域的第二座塔底部。需要飞过云层到达。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 欢呼表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 发型</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 面具</span>
+          </div>
+        </div>
+
+        <div class="spirit-card" style="--spirit-color: rgba(141, 212, 168, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg></div>
+            <div><h3>鼓掌先祖</h3><p class="spirit-type">基础表情 · 鼓掌</p></div>
+          </div>
+          <p class="spirit-desc">位于左侧浮岛背面。需要从蝴蝶平原飞到浮岛，绕到背面才能看到石碑。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 鼓掌表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 发型</span>
+          </div>
+        </div>
+
+        <div class="spirit-card" style="--spirit-color: rgba(141, 212, 168, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg></div>
+            <div><h3>笑先祖</h3><p class="spirit-type">基础表情 · 大笑</p></div>
+          </div>
+          <p class="spirit-desc">位于幽光山洞内。需要两人合作打开双人门才能进入，山洞内有大量烛火。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 大笑表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 发型</span>
+          </div>
+        </div>
+
+        <div class="spirit-card" style="--spirit-color: rgba(141, 212, 168, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg></div>
+            <div><h3>引路先祖</h3><p class="spirit-type">基础表情 · 指引方向</p></div>
+          </div>
+          <p class="spirit-desc">位于三塔区域第一座塔的顶部。需要向上飞行到达塔顶平台。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 指引表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 斗篷</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 面具</span>
+          </div>
+        </div>
+
+        <div class="spirit-card" style="--spirit-color: rgba(141, 212, 168, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg></div>
+            <div><h3>飞鸟先祖</h3><p class="spirit-type">高级表情 · 鸟鸣呼唤</p></div>
+          </div>
+          <p class="spirit-desc">位于云野最高处的天空岛屿。需要多个光翼才能飞到，是云野最难到达的先祖。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 鸟鸣表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 鸟头面具</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 乐器</span>
+          </div>
+        </div>
+
+        <div class="spirit-card" style="--spirit-color: rgba(141, 212, 168, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg></div>
+            <div><h3>蝴蝶先祖</h3><p class="spirit-type">基础表情 · 招手</p></div>
+          </div>
+          <p class="spirit-desc">位于蝴蝶平原右侧的浅水区域。靠近后会有蝴蝶引导你前往石碑位置。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 招手表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 发型</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 雨林先祖 -->
+    <div class="tab-content" id="tab-forest">
+      <div class="spirit-grid">
+        <div class="spirit-card" style="--spirit-color: rgba(107, 184, 154, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg></div>
+            <div><h3>害羞先祖</h3><p class="spirit-type">基础表情 · 害羞遮脸</p></div>
+          </div>
+          <p class="spirit-desc">位于雨林入口断桥旁的树洞内。进门后左转跳入树洞即可找到。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 害羞表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 发型</span>
+          </div>
+        </div>
+
+        <div class="spirit-card" style="--spirit-color: rgba(107, 184, 154, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg></div>
+            <div><h3>哭泣先祖</h3><p class="spirit-type">基础表情 · 哭泣</p></div>
+          </div>
+          <p class="spirit-desc">位于荧光森林的树屋上方。需要飞到树屋顶部找到石碑，记忆路线会穿过树冠。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 哭泣表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 发型</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 斗篷</span>
+          </div>
+        </div>
+
+        <div class="spirit-card" style="--spirit-color: rgba(107, 184, 154, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg></div>
+            <div><h3>发抖先祖</h3><p class="spirit-type">基础表情 · 发抖</p></div>
+          </div>
+          <p class="spirit-desc">位于密林遗迹的左下方。需要穿过一片密集的雨林区，注意保持光翼不被淋湿。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 发抖表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 发型</span>
+          </div>
+        </div>
+
+        <div class="spirit-card" style="--spirit-color: rgba(107, 184, 154, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg></div>
+            <div><h3>捉迷藏先祖</h3><p class="spirit-type">高级表情 · 捉迷藏</p></div>
+          </div>
+          <p class="spirit-desc">位于密林遗迹深处隐藏的树洞内。需要找到特定的发光蘑菇作为标记，位置隐蔽。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 捉迷藏表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 蘑菇头</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 斗篷</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 霞谷先祖 -->
+    <div class="tab-content" id="tab-valley">
+      <div class="spirit-grid">
+        <div class="spirit-card" style="--spirit-color: rgba(232, 155, 139, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg></div>
+            <div><h3>鞠躬先祖</h3><p class="spirit-type">基础表情 · 鞠躬</p></div>
+          </div>
+          <p class="spirit-desc">位于溜冰场左侧观众席。进入霞谷后滑到溜冰场，飞到左侧看台即可找到。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 鞠躬表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 发型</span>
+          </div>
+        </div>
+
+        <div class="spirit-card" style="--spirit-color: rgba(232, 155, 139, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg></div>
+            <div><h3>倒立先祖</h3><p class="spirit-type">基础表情 · 倒立</p></div>
+          </div>
+          <p class="spirit-desc">位于竞速赛道中途的右侧山洞内。选择竞速赛道后注意右侧的岔路口，飞入山洞即可。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 倒立表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 发型</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 面具</span>
+          </div>
+        </div>
+
+        <div class="spirit-card" style="--spirit-color: rgba(232, 155, 139, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg></div>
+            <div><h3>翱翔先祖</h3><p class="spirit-type">高级表情 · 展翅翱翔</p></div>
+          </div>
+          <p class="spirit-desc">位于霞谷终点观星台最高处。需要在飞行赛道中收集足够光翼飞到塔顶，霞谷最难先祖。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 翱翔表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 斗篷</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 发型</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 暮土先祖 -->
+    <div class="tab-content" id="tab-wasteland">
+      <div class="spirit-grid">
+        <div class="spirit-card" style="--spirit-color: rgba(196, 153, 104, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg></div>
+            <div><h3>躲藏先祖</h3><p class="spirit-type">基础表情 · 躲藏</p></div>
+          </div>
+          <p class="spirit-desc">位于暮土入口废墟的右侧墙后。注意避开冥龙的红光扫射，蹲伏移动可降低被发现概率。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 躲藏表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 发型</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 面具</span>
+          </div>
+        </div>
+
+        <div class="spirit-card" style="--spirit-color: rgba(196, 153, 104, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg></div>
+            <div><h3>敬礼先祖</h3><p class="spirit-type">基础表情 · 敬礼</p></div>
+          </div>
+          <p class="spirit-desc">位于龙骨墓地尾部。需要穿过冥龙巡逻区域，在骨架下方找到石碑。高危区域，建议结伴前往。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 敬礼表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 发型</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 斗篷</span>
+          </div>
+        </div>
+
+        <div class="spirit-card" style="--spirit-color: rgba(196, 153, 104, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg></div>
+            <div><h3>守望先祖</h3><p class="spirit-type">高级表情 · 望远守望</p></div>
+          </div>
+          <p class="spirit-desc">位于黑水港湾的最高塔顶部。需要穿越黑水区域并飞到塔顶，途中注意躲避螃蟹和冥龙。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 守望表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 头盔</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 乐器</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 禁阁先祖 -->
+    <div class="tab-content" id="tab-vault">
+      <div class="spirit-grid">
+        <div class="spirit-card" style="--spirit-color: rgba(184, 168, 212, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg></div>
+            <div><h3>推门先祖</h3><p class="spirit-type">基础表情 · 推门</p></div>
+          </div>
+          <p class="spirit-desc">位于禁阁一楼大厅右侧。需要点亮周围的烛台才能看到石碑，记忆路线较为简单。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 推门表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 发型</span>
+          </div>
+        </div>
+
+        <div class="spirit-card" style="--spirit-color: rgba(184, 168, 212, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg></div>
+            <div><h3>禅坐先祖</h3><p class="spirit-type">基础表情 · 禅坐冥想</p></div>
+          </div>
+          <p class="spirit-desc">位于禁阁三楼漂浮平台上。需要利用气流上升到达，禅坐表情可以触发冥想点。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 禅坐表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 发型</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 面具</span>
+          </div>
+        </div>
+
+        <div class="spirit-card" style="--spirit-color: rgba(184, 168, 212, 0.15);">
+          <div class="spirit-difficulty">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          </div>
+          <div class="spirit-header">
+            <div class="spirit-avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg></div>
+            <div><h3>漂浮先祖</h3><p class="spirit-type">高级表情 · 漂浮冥想</p></div>
+          </div>
+          <p class="spirit-desc">位于禁阁顶层图书馆最高层。需要到达禁阁顶层后继续向上飞行，在书架顶部找到隐藏入口。</p>
+          <div class="spirit-rewards">
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 漂浮表情</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 星光斗篷</span>
+            <span class="spirit-reward"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> 乐器</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 解锁提示 -->
+    <div class="tip-box reveal" style="margin-top: var(--space-2xl);">
+      <svg class="tip-icon" viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 2 .8 3.8 2 5.1V18c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-2.9c1.2-1.3 2-3.1 2-5.1 0-4.4-3.6-8-8-8z"/></svg>
+      <div class="tip-content">
+        <h4>先祖回忆解锁须知</h4>
+        <p>
+          1. 解锁先祖需要先点燃石碑上的蜡烛，然后跟随蓝色光点走完记忆路线。<br>
+          2. 回到遇境后可以在星空下找到对应的先祖星象，用蜡烛和爱心解锁装扮与动作。<br>
+          3. 部分高级先祖的装扮需要季节蜡烛或季节爱心解锁，注意合理安排资源。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>光遇攻略站</h3>
+        <p>温暖同行，照亮归途。这里是光遇玩家自己的中文攻略社区。</p>
+      </div>
+      <div class="footer-col">
+        <h4>攻略导航</h4>
+        <ul>
+          <li><a href="candles.html">每日蜡烛</a></li>
+          <li><a href="spirits.html">先祖回忆</a></li>
+          <li><a href="seasonal.html">季节活动</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>地图攻略</h4>
+        <ul>
+          <li><a href="spirits.html">晨岛</a></li>
+          <li><a href="spirits.html">云野</a></li>
+          <li><a href="spirits.html">雨林</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于</h4>
+        <ul>
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">贡献攻略</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>光遇攻略站 Sky Guide · 非官方社区攻略，游戏版权归 thatgamecompany 所有</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="返回顶部">
+  <svg viewBox="0 0 24 24"><path d="M12 4l8 8h-5v8h-6v-8H4l8-8z"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>光遇攻略站 | Sky Guide - 温暖同行，照亮归途</title>
+  <meta name="description" content="光遇(Sky: Children of the Light)中文攻略站，每日蜡烛位置、先祖回忆、季节活动攻略一应俱全。">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- 漂浮光粒 -->
+<div class="light-particles" id="particles"></div>
+
+<!-- 导航栏 -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2C9.5 2 8 4 8 6.5c0 1 .3 1.8.7 2.5C7.5 9.5 6 11.5 6 14c0 3.3 2.7 6 6 6s6-2.7 6-6c0-2.5-1.5-4.5-2.7-5 .4-.7.7-1.5.7-2.5C16 4 14.5 2 12 2zm0 2c1 0 2 1 2 2.5 0 .5-.1 1-.4 1.5l-.5 1 1 .5c1 .5 1.9 1.7 1.9 4.5 0 2.2-1.8 4-4 4s-4-1.8-4-4c0-2.8.9-4 1.9-4.5l1-.5-.5-1c-.3-.5-.4-1-.4-1.5C10 5 11 4 12 4z"/></svg>
+      </span>
+      光遇攻略站
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">首页</a></li>
+      <li><a href="candles.html">每日蜡烛</a></li>
+      <li><a href="spirits.html">先祖回忆</a></li>
+      <li><a href="seasonal.html">季节活动</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      <span>每日更新 · 今日蜡烛已就位</span>
+    </div>
+    <h1 class="hero-title">温暖同行<br><span class="highlight">照亮归途</span></h1>
+    <p class="hero-subtitle">
+      最全的光遇中文攻略站。每日蜡烛位置、先祖回忆路线、季节活动指南，<br>
+      让每一次飞行都不迷路，每一根蜡烛都不错过。
+    </p>
+    <div class="hero-actions">
+      <a href="candles.html" class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 2c-1.5 0-2.5 1-2.5 2.5 0 .5.2 1 .4 1.3-1.2.8-2 2.2-2 3.7 0 .8.2 1.5.5 2.2-1.3 1-2 2.5-2 4.3C8.5 19.5 10 22 12 22s3.5-2.5 3.5-6c0-1.8-.7-3.3-2-4.3.3-.7.5-1.4.5-2.2 0-1.5-.8-2.9-2-3.7.3-.4.4-.9.4-1.3C14.5 3 13.5 2 12 2zm0 4c.8 0 1.5.7 1.5 1.5 0 .4-.1.7-.4 1l-.6.7.7.6c1.1.7 1.8 1.9 1.8 3.7 0 2.2-1 4-3 4s-3-1.8-3-4c0-1.8.7-3 1.8-3.7l.7-.6-.6-.7c-.3-.3-.4-.6-.4-1C10.5 6.7 11.2 6 12 6z"/></svg>
+        查看今日蜡烛
+      </a>
+      <a href="spirits.html" class="btn btn-ghost">先祖攻略</a>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>向下滚动探索</span>
+    <div class="arrow"></div>
+  </div>
+</header>
+
+<!-- 快捷导航 -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">快速入口</span>
+      <h2 class="section-title">你需要的一切攻略</h2>
+      <p class="section-subtitle">从每日蜡烛到季节先祖，一站式覆盖光遇全部内容</p>
+    </div>
+    <div class="quick-nav">
+      <a href="candles.html" class="quick-card reveal" style="--card-gradient: linear-gradient(90deg, #F5C76E, #FF9F43); --card-bg-tint: rgba(245, 199, 110, 0.12); --card-icon-color: #D4A843;">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 2c-1.5 0-2.5 1-2.5 2.5 0 .5.2 1 .4 1.3-1.2.8-2 2.2-2 3.7 0 .8.2 1.5.5 2.2-1.3 1-2 2.5-2 4.3C8.5 19.5 10 22 12 22s3.5-2.5 3.5-6c0-1.8-.7-3.3-2-4.3.3-.7.5-1.4.5-2.2 0-1.5-.8-2.9-2-3.7.3-.4.4-.9.4-1.3C14.5 3 13.5 2 12 2zm0 4c.8 0 1.5.7 1.5 1.5 0 .4-.1.7-.4 1l-.6.7.7.6c1.1.7 1.8 1.9 1.8 3.7 0 2.2-1 4-3 4s-3-1.8-3-4c0-1.8.7-3 1.8-3.7l.7-.6-.6-.7c-.3-.3-.4-.6-.4-1C10.5 6.7 11.2 6 12 6z"/></svg>
+        </div>
+        <h3>每日蜡烛</h3>
+        <p>每日蜡烛蛋糕位置一览，告别东跑西找</p>
+        <span class="card-link">查看攻略 →</span>
+      </a>
+      <a href="spirits.html" class="quick-card reveal reveal-delay-1" style="--card-gradient: linear-gradient(90deg, #A8D0E6, #7BA7C4); --card-bg-tint: rgba(168, 208, 230, 0.12); --card-icon-color: #5A8EA8;">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 2 .8 3.8 2 5.1V18c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-2.9c1.2-1.3 2-3.1 2-5.1 0-4.4-3.6-8-8-8zm-4 16v-1h8v1H8zm6.5-2h-5c-.6-.7-1-1.4-1.3-2h7.6c-.3.6-.7 1.3-1.3 2zm2.3-4H7.2c-.1-.3-.2-.7-.2-1h10c0 .3-.1.7-.2 1z"/></svg>
+        </div>
+        <h3>先祖回忆</h3>
+        <p>全地图先祖位置与解锁奖励，一文看懂</p>
+        <span class="card-link">查看攻略 →</span>
+      </a>
+      <a href="seasonal.html" class="quick-card reveal reveal-delay-2" style="--card-gradient: linear-gradient(90deg, #B8A8D4, #8B5A9E); --card-bg-tint: rgba(184, 168, 212, 0.12); --card-icon-color: #7B5EA1;">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+        </div>
+        <h3>季节活动</h3>
+        <p>当季活动攻略与往期季节回顾</p>
+        <span class="card-link">查看攻略 →</span>
+      </a>
+      <a href="spirits.html" class="quick-card reveal reveal-delay-3" style="--card-gradient: linear-gradient(90deg, #8DD4A8, #6BB89A); --card-bg-tint: rgba(141, 212, 168, 0.12); --card-icon-color: #4A9B70;">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        </div>
+        <h3>装扮图鉴</h3>
+        <p>收集每一件装扮，点亮你的衣柜</p>
+        <span class="card-link">查看攻略 →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 每日蜡烛概览 -->
+<section class="section daily-candle-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">今日更新</span>
+      <h2 class="section-title">今日蜡烛位置</h2>
+      <p class="section-subtitle">每天蜡烛蛋糕刷新在不同地图，这里帮你快速定位</p>
+    </div>
+    <div class="daily-candle-card reveal">
+      <div class="daily-candle-header">
+        <h3>今日蜡烛蛋糕分布</h3>
+        <span class="date-badge" id="todayDate">加载中...</span>
+      </div>
+      <div class="candle-locations">
+        <div class="candle-loc-item">
+          <div class="candle-icon">
+            <svg viewBox="0 0 24 24"><path fill="#FFB75E" d="M12 2c-1.5 0-2.5 1-2.5 2.5 0 .5.2 1 .4 1.3-1.2.8-2 2.2-2 3.7 0 .8.2 1.5.5 2.2-1.3 1-2 2.5-2 4.3C8.5 19.5 10 22 12 22s3.5-2.5 3.5-6c0-1.8-.7-3.3-2-4.3.3-.7.5-1.4.5-2.2 0-1.5-.8-2.9-2-3.7.3-.4.4-.9.4-1.3C14.5 3 13.5 2 12 2z"/></svg>
+          </div>
+          <div class="loc-info">
+            <h4>云野 · 蝴蝶平原</h4>
+            <p>2堆蜡烛蛋糕</p>
+          </div>
+        </div>
+        <div class="candle-loc-item">
+          <div class="candle-icon">
+            <svg viewBox="0 0 24 24"><path fill="#FFB75E" d="M12 2c-1.5 0-2.5 1-2.5 2.5 0 .5.2 1 .4 1.3-1.2.8-2 2.2-2 3.7 0 .8.2 1.5.5 2.2-1.3 1-2 2.5-2 4.3C8.5 19.5 10 22 12 22s3.5-2.5 3.5-6c0-1.8-.7-3.3-2-4.3.3-.7.5-1.4.5-2.2 0-1.5-.8-2.9-2-3.7.3-.4.4-.9.4-1.3C14.5 3 13.5 2 12 2z"/></svg>
+          </div>
+          <div class="loc-info">
+            <h4>雨林 · 荧光森林</h4>
+            <p>1堆蜡烛蛋糕</p>
+          </div>
+        </div>
+        <div class="candle-loc-item">
+          <div class="candle-icon">
+            <svg viewBox="0 0 24 24"><path fill="#FFB75E" d="M12 2c-1.5 0-2.5 1-2.5 2.5 0 .5.2 1 .4 1.3-1.2.8-2 2.2-2 3.7 0 .8.2 1.5.5 2.2-1.3 1-2 2.5-2 4.3C8.5 19.5 10 22 12 22s3.5-2.5 3.5-6c0-1.8-.7-3.3-2-4.3.3-.7.5-1.4.5-2.2 0-1.5-.8-2.9-2-3.7.3-.4.4-.9.4-1.3C14.5 3 13.5 2 12 2z"/></svg>
+          </div>
+          <div class="loc-info">
+            <h4>暮土 · 黑水港湾</h4>
+            <p>1堆蜡烛蛋糕</p>
+          </div>
+        </div>
+        <div class="candle-loc-item">
+          <div class="candle-icon">
+            <svg viewBox="0 0 24 24"><path fill="#FFB75E" d="M12 2c-1.5 0-2.5 1-2.5 2.5 0 .5.2 1 .4 1.3-1.2.8-2 2.2-2 3.7 0 .8.2 1.5.5 2.2-1.3 1-2 2.5-2 4.3C8.5 19.5 10 22 12 22s3.5-2.5 3.5-6c0-1.8-.7-3.3-2-4.3.3-.7.5-1.4.5-2.2 0-1.5-.8-2.9-2-3.7.3-.4.4-.9.4-1.3C14.5 3 13.5 2 12 2z"/></svg>
+          </div>
+          <div class="loc-info">
+            <h4>禁阁 · 图书馆</h4>
+            <p>1堆蜡烛蛋糕</p>
+          </div>
+        </div>
+      </div>
+      <div class="tip-box" style="margin-top: var(--space-lg);">
+        <svg class="tip-icon" viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 2 .8 3.8 2 5.1V18c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-2.9c1.2-1.3 2-3.1 2-5.1 0-4.4-3.6-8-8-8zm-4 16v-1h8v1H8zm6.5-2h-5c-.6-.7-1-1.4-1.3-2h7.6c-.3.6-.7 1.3-1.3 2zm2.3-4H7.2c-.1-.3-.2-.7-.2-1h10c0 .3-.1.7-.2 1z"/></svg>
+        <div class="tip-content">
+          <h4>收集技巧</h4>
+          <p>每堆蜡烛蛋糕可收集约 5 根蜡烛，今日共约 25 根。建议先完成每日任务再收集，效率更高。带上好友一起跑图更快哦！</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 地图概览 -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">世界探索</span>
+      <h2 class="section-title">七大地图一览</h2>
+      <p class="section-subtitle">从晨岛到伊甸，每个世界都有独特的先祖与蜡烛等待发现</p>
+    </div>
+    <div class="map-grid">
+      <a href="candles.html" class="map-card reveal" style="--map-color: linear-gradient(135deg, #F4C97A, #E8A87C);">
+        <div class="map-bg"></div>
+        <div class="map-info">
+          <h3>晨岛</h3>
+          <p>旅程起点，学习飞行</p>
+          <div class="map-stats">
+            <span class="map-stat"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 3位先祖</span>
+            <span class="map-stat"><svg viewBox="0 0 24 24"><path d="M12 2c-1.5 0-2.5 1-2.5 2.5 0 .5.2 1 .4 1.3-1.2.8-2 2.2-2 3.7 0 .8.2 1.5.5 2.2-1.3 1-2 2.5-2 4.3C8.5 19.5 10 22 12 22s3.5-2.5 3.5-6c0-1.8-.7-3.3-2-4.3.3-.7.5-1.4.5-2.2 0-1.5-.8-2.9-2-3.7z"/></svg> 蜡烛×3</span>
+          </div>
+        </div>
+      </a>
+      <a href="candles.html" class="map-card reveal reveal-delay-1" style="--map-color: linear-gradient(135deg, #8DD4A8, #6BB89A);">
+        <div class="map-bg"></div>
+        <div class="map-info">
+          <h3>云野</h3>
+          <p>广阔草原，蝴蝶飞舞</p>
+          <div class="map-stats">
+            <span class="map-stat"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 7位先祖</span>
+            <span class="map-stat"><svg viewBox="0 0 24 24"><path d="M12 2c-1.5 0-2.5 1-2.5 2.5 0 .5.2 1 .4 1.3-1.2.8-2 2.2-2 3.7 0 .8.2 1.5.5 2.2-1.3 1-2 2.5-2 4.3C8.5 19.5 10 22 12 22s3.5-2.5 3.5-6c0-1.8-.7-3.3-2-4.3z"/></svg> 蜡烛×8</span>
+          </div>
+        </div>
+      </a>
+      <a href="candles.html" class="map-card reveal reveal-delay-2" style="--map-color: linear-gradient(135deg, #6BB89A, #4A9B7E);">
+        <div class="map-bg"></div>
+        <div class="map-info">
+          <h3>雨林</h3>
+          <p>静谧森林，荧光闪烁</p>
+          <div class="map-stats">
+            <span class="map-stat"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 8位先祖</span>
+            <span class="map-stat"><svg viewBox="0 0 24 24"><path d="M12 2c-1.5 0-2.5 1-2.5 2.5 0 .5.2 1 .4 1.3-1.2.8-2 2.2-2 3.7 0 .8.2 1.5.5 2.2-1.3 1-2 2.5-2 4.3C8.5 19.5 10 22 12 22s3.5-2.5 3.5-6c0-1.8-.7-3.3-2-4.3z"/></svg> 蜡烛×10</span>
+          </div>
+        </div>
+      </a>
+      <a href="candles.html" class="map-card reveal" style="--map-color: linear-gradient(135deg, #E89B8B, #D6705A);">
+        <div class="map-bg"></div>
+        <div class="map-info">
+          <h3>霞谷</h3>
+          <p>冰天雪地，竞速飞翔</p>
+          <div class="map-stats">
+            <span class="map-stat"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 7位先祖</span>
+            <span class="map-stat"><svg viewBox="0 0 24 24"><path d="M12 2c-1.5 0-2.5 1-2.5 2.5 0 .5.2 1 .4 1.3-1.2.8-2 2.2-2 3.7 0 .8.2 1.5.5 2.2-1.3 1-2 2.5-2 4.3C8.5 19.5 10 22 12 22s3.5-2.5 3.5-6c0-1.8-.7-3.3-2-4.3z"/></svg> 蜡烛×9</span>
+          </div>
+        </div>
+      </a>
+      <a href="candles.html" class="map-card reveal reveal-delay-1" style="--map-color: linear-gradient(135deg, #C49968, #A87848);">
+        <div class="map-bg"></div>
+        <div class="map-info">
+          <h3>暮土</h3>
+          <p>荒芜之地，冥龙出没</p>
+          <div class="map-stats">
+            <span class="map-stat"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 6位先祖</span>
+            <span class="map-stat"><svg viewBox="0 0 24 24"><path d="M12 2c-1.5 0-2.5 1-2.5 2.5 0 .5.2 1 .4 1.3-1.2.8-2 2.2-2 3.7 0 .8.2 1.5.5 2.2-1.3 1-2 2.5-2 4.3C8.5 19.5 10 22 12 22s3.5-2.5 3.5-6c0-1.8-.7-3.3-2-4.3z"/></svg> 蜡烛×8</span>
+          </div>
+        </div>
+      </a>
+      <a href="candles.html" class="map-card reveal reveal-delay-2" style="--map-color: linear-gradient(135deg, #B8A8D4, #9080B8);">
+        <div class="map-bg"></div>
+        <div class="map-info">
+          <h3>禁阁</h3>
+          <p>知识之塔，层层探索</p>
+          <div class="map-stats">
+            <span class="map-stat"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 5位先祖</span>
+            <span class="map-stat"><svg viewBox="0 0 24 24"><path d="M12 2c-1.5 0-2.5 1-2.5 2.5 0 .5.2 1 .4 1.3-1.2.8-2 2.2-2 3.7 0 .8.2 1.5.5 2.2-1.3 1-2 2.5-2 4.3C8.5 19.5 10 22 12 22s3.5-2.5 3.5-6c0-1.8-.7-3.3-2-4.3z"/></svg> 蜡烛×7</span>
+          </div>
+        </div>
+      </a>
+      <a href="candles.html" class="map-card reveal" style="--map-color: linear-gradient(135deg, #FF6B5C, #C0403A);">
+        <div class="map-bg"></div>
+        <div class="map-info">
+          <h3>伊甸</h3>
+          <p>旅途终点，献出光明</p>
+          <div class="map-stats">
+            <span class="map-stat"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg> 0位先祖</span>
+            <span class="map-stat"><svg viewBox="0 0 24 24"><path d="M12 2c-1.5 0-2.5 1-2.5 2.5 0 .5.2 1 .4 1.3-1.2.8-2 2.2-2 3.7 0 .8.2 1.5.5 2.2-1.3 1-2 2.5-2 4.3C8.5 19.5 10 22 12 22s3.5-2.5 3.5-6c0-1.8-.7-3.3-2-4.3z"/></svg> 终点挑战</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>光遇攻略站</h3>
+        <p>温暖同行，照亮归途。这里是光遇玩家自己的中文攻略社区，每日更新蜡烛位置与活动攻略。</p>
+      </div>
+      <div class="footer-col">
+        <h4>攻略导航</h4>
+        <ul>
+          <li><a href="candles.html">每日蜡烛</a></li>
+          <li><a href="spirits.html">先祖回忆</a></li>
+          <li><a href="seasonal.html">季节活动</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>地图攻略</h4>
+        <ul>
+          <li><a href="candles.html">晨岛</a></li>
+          <li><a href="candles.html">云野</a></li>
+          <li><a href="candles.html">雨林</a></li>
+          <li><a href="candles.html">霞谷 · 暮土 · 禁阁</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于</h4>
+        <ul>
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">贡献攻略</a></li>
+          <li><a href="#">意见反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>光遇攻略站 Sky Guide · 非官方社区攻略，游戏版权归 thatgamecompany 所有</p>
+    </div>
+  </div>
+</footer>
+
+<!-- 返回顶部 -->
+<button class="back-to-top" id="backToTop" aria-label="返回顶部">
+  <svg viewBox="0 0 24 24"><path d="M12 4l8 8h-5v8h-6v-8H4l8-8z"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
