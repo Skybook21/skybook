@@ -1274,11 +1274,11 @@ img { max-width: 100%; display: block; }
 }
 
 /* ============================================
-   页面右上角更新时间徽章
+   导航栏右下角更新时间徽章
    ============================================ */
 .update-badge {
   position: fixed;
-  top: calc(var(--nav-height) + 12px);
+  top: calc(var(--nav-height) - 15px);
   right: 16px;
   z-index: 950;
   padding: 6px 14px;
