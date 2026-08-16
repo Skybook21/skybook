@@ -1283,7 +1283,7 @@ img { max-width: 100%; display: block; }
 
 .update-badge {
   position: absolute;
-  left: 0;
+  left: var(--space-lg);
   bottom: 3px;
   font-size: 0.65rem;
   line-height: 1;
