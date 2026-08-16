@@ -122,10 +122,15 @@
     dateBadge.textContent = now.getFullYear() + '年' + months[now.getMonth()] + now.getDate() + '日 · ' + days[now.getDay()];
   }
 
-  /* --- 8. 最后更新时间 --- */
+  /* --- 8. 最后更新时间（按页面区分） --- */
   var updateEl = document.getElementById('lastUpdated');
   if (updateEl && window.LAST_UPDATED) {
-    updateEl.textContent = '最后更新：' + window.LAST_UPDATED;
+    var pageName = location.pathname.split('/').pop().replace('.html', '') || 'index';
+    if (pageName === '') pageName = 'index';
+    var updateTime = window.LAST_UPDATED[pageName];
+    if (updateTime) {
+      updateEl.textContent = '最后更新：' + updateTime;
+    }
   }
 
 })();
