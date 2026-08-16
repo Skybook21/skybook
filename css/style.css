@@ -1273,6 +1273,13 @@ img { max-width: 100%; display: block; }
   opacity: 0.5;
 }
 
+.footer-bottom .update-time {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
 /* ============================================
    滚动入场动画
    ============================================ */

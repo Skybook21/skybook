@@ -122,4 +122,10 @@
     dateBadge.textContent = now.getFullYear() + '年' + months[now.getMonth()] + now.getDate() + '日 · ' + days[now.getDay()];
   }
 
+  /* --- 8. 最后更新时间 --- */
+  var updateEl = document.getElementById('lastUpdated');
+  if (updateEl && window.LAST_UPDATED) {
+    updateEl.textContent = '最后更新：' + window.LAST_UPDATED;
+  }
+
 })();
