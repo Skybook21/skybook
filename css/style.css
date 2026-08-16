@@ -1273,11 +1273,40 @@ img { max-width: 100%; display: block; }
   opacity: 0.5;
 }
 
-.footer-bottom .update-time {
-  display: block;
-  margin-top: 6px;
+/* ============================================
+   页面右上角更新时间徽章
+   ============================================ */
+.update-badge {
+  position: fixed;
+  top: calc(var(--nav-height) + 12px);
+  right: 16px;
+  z-index: 950;
+  padding: 6px 14px;
   font-size: 0.75rem;
-  opacity: 0.8;
+  color: var(--text-secondary, #8a7f70);
+  background: rgba(250, 246, 240, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(232, 223, 208, 0.8);
+  border-radius: 999px;
+  box-shadow: 0 2px 12px rgba(160, 140, 110, 0.15);
+  white-space: nowrap;
+  user-select: none;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.update-badge:not(:empty)::before {
+  content: '🕒';
+  margin-right: 5px;
+}
+
+@media (max-width: 480px) {
+  .update-badge {
+    right: 10px;
+    font-size: 0.68rem;
+    padding: 5px 10px;
+  }
 }
 
 /* ============================================
