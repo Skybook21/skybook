@@ -825,8 +825,8 @@ img { max-width: 100%; display: block; }
    ============================================ */
 .guide-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: var(--space-lg);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--space-md);
 }
 
 .guide-card {
@@ -844,7 +844,7 @@ img { max-width: 100%; display: block; }
 }
 
 .guide-card .card-banner {
-  height: 120px;
+  height: 90px;
   background: var(--card-banner-color, var(--map-dawn));
   display: flex;
   align-items: center;
@@ -860,20 +860,20 @@ img { max-width: 100%; display: block; }
 }
 
 .guide-card .card-banner .banner-icon {
-  width: 48px; height: 48px;
+  width: 40px; height: 40px;
   fill: rgba(255, 255, 255, 0.8);
   z-index: 1;
 }
 
 .guide-card .card-body {
-  padding: var(--space-lg);
+  padding: var(--space-md);
 }
 
 .guide-card .card-body h3 {
   font-family: var(--font-heading);
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   color: var(--color-text);
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-xs);
 }
 
 .guide-card .card-body .card-meta {
@@ -916,14 +916,14 @@ img { max-width: 100%; display: block; }
    ============================================ */
 .spirit-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: var(--space-lg);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--space-md);
 }
 
 .spirit-card {
   background: var(--color-card);
   border-radius: var(--radius-lg);
-  padding: var(--space-lg);
+  padding: var(--space-md);
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--color-border);
   transition: var(--transition);
@@ -939,12 +939,12 @@ img { max-width: 100%; display: block; }
 .spirit-card .spirit-header {
   display: flex;
   align-items: center;
-  gap: var(--space-md);
-  margin-bottom: var(--space-md);
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
 }
 
 .spirit-avatar {
-  width: 56px; height: 56px;
+  width: 48px; height: 48px;
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
@@ -954,25 +954,25 @@ img { max-width: 100%; display: block; }
 }
 
 .spirit-avatar svg {
-  width: 28px; height: 28px;
+  width: 24px; height: 24px;
   fill: var(--color-primary-dark);
 }
 
 .spirit-card h3 {
   font-family: var(--font-heading);
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   color: var(--color-text);
 }
 
 .spirit-card .spirit-type {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: var(--color-text-muted);
 }
 
 .spirit-card .spirit-desc {
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   color: var(--color-text-light);
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm);
   line-height: 1.6;
 }
 
