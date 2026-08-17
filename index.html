@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>光遇攻略书 | Skybook - 温暖同行，照亮归途</title>
-  <meta name="description" content="光遇(Sky: Children of the Light)中文攻略站，每日蜡烛位置、先祖回忆、季节活动攻略一应俱全。">
+  <meta name="description" content="光遇(Sky: Children of the Light)中文攻略站，涵盖每日任务、当前季节、限时活动、常驻&复刻先祖 5 大模块。">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -24,9 +24,10 @@
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html" class="active">首页</a></li>
-      <li><a href="candles.html">今日任务</a></li>
-      <li><a href="spirits.html">先祖回忆</a></li>
-      <li><a href="seasonal.html">季节活动</a></li>
+      <li><a href="candles.html">每日任务</a></li>
+      <li><a href="current-season.html">当前季节</a></li>
+      <li><a href="events.html">限时活动</a></li>
+      <li><a href="spirits.html">常驻&复刻先祖</a></li>
     </ul>
     <div class="nav-toggle" id="navToggle">
       <span></span><span></span><span></span>
@@ -52,7 +53,7 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 2c-1.5 0-2.5 1-2.5 2.5 0 .5.2 1 .4 1.3-1.2.8-2 2.2-2 3.7 0 .8.2 1.5.5 2.2-1.3 1-2 2.5-2 4.3C8.5 19.5 10 22 12 22s3.5-2.5 3.5-6c0-1.8-.7-3.3-2-4.3.3-.7.5-1.4.5-2.2 0-1.5-.8-2.9-2-3.7.3-.4.4-.9.4-1.3C14.5 3 13.5 2 12 2zm0 4c.8 0 1.5.7 1.5 1.5 0 .4-.1.7-.4 1l-.6.7.7.6c1.1.7 1.8 1.9 1.8 3.7 0 2.2-1 4-3 4s-3-1.8-3-4c0-1.8.7-3 1.8-3.7l.7-.6-.6-.7c-.3-.3-.4-.6-.4-1C10.5 6.7 11.2 6 12 6z"/></svg>
         查看今日任务
       </a>
-      <a href="seasonal.html" class="btn btn-ghost">梵高季</a>
+      <a href="current-season.html" class="btn btn-ghost">梵高季</a>
     </div>
   </div>
   <div class="hero-scroll-hint">
@@ -74,32 +75,40 @@
         <div class="icon-wrap">
           <svg viewBox="0 0 24 24"><path d="M12 2c-1.5 0-2.5 1-2.5 2.5 0 .5.2 1 .4 1.3-1.2.8-2 2.2-2 3.7 0 .8.2 1.5.5 2.2-1.3 1-2 2.5-2 4.3C8.5 19.5 10 22 12 22s3.5-2.5 3.5-6c0-1.8-.7-3.3-2-4.3.3-.7.5-1.4.5-2.2 0-1.5-.8-2.9-2-3.7.3-.4.4-.9.4-1.3C14.5 3 13.5 2 12 2zm0 4c.8 0 1.5.7 1.5 1.5 0 .4-.1.7-.4 1l-.6.7.7.6c1.1.7 1.8 1.9 1.8 3.7 0 2.2-1 4-3 4s-3-1.8-3-4c0-1.8.7-3 1.8-3.7l.7-.6-.6-.7c-.3-.3-.4-.6-.4-1C10.5 6.7 11.2 6 12 6z"/></svg>
         </div>
-        <h3>今日任务</h3>
-        <p>每日4个任务详解 + 大蜡烛堆位置 + 免费魔法</p>
+        <h3>每日任务</h3>
+        <p>每日 4 个任务详解 + 大蜡烛堆位置 + 免费魔法</p>
         <span class="card-link">查看攻略 →</span>
       </a>
-      <a href="spirits.html" class="quick-card reveal reveal-delay-1" style="--card-gradient: linear-gradient(90deg, #A8D0E6, #7BA7C4); --card-bg-tint: rgba(168, 208, 230, 0.12); --card-icon-color: #5A8EA8;">
-        <div class="icon-wrap">
-          <svg viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 2 .8 3.8 2 5.1V18c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-2.9c1.2-1.3 2-3.1 2-5.1 0-4.4-3.6-8-8-8zm-4 16v-1h8v1H8zm6.5-2h-5c-.6-.7-1-1.4-1.3-2h7.6c-.3.6-.7 1.3-1.3 2zm2.3-4H7.2c-.1-.3-.2-.7-.2-1h10c0 .3-.1.7-.2 1z"/></svg>
-        </div>
-        <h3>先祖回忆</h3>
-        <p>全地图先祖位置与解锁奖励，一文看懂</p>
-        <span class="card-link">查看攻略 →</span>
-      </a>
-      <a href="seasonal.html" class="quick-card reveal reveal-delay-2" style="--card-gradient: linear-gradient(90deg, #B8A8D4, #8B5A9E); --card-bg-tint: rgba(184, 168, 212, 0.12); --card-icon-color: #7B5EA1;">
+      <a href="current-season.html" class="quick-card reveal reveal-delay-1" style="--card-gradient: linear-gradient(90deg, #B8A8D4, #8B5A9E); --card-bg-tint: rgba(184, 168, 212, 0.12); --card-icon-color: #7B5EA1;">
         <div class="icon-wrap">
           <svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
         </div>
-        <h3>季节活动</h3>
-        <p>当季活动攻略与往期季节回顾</p>
+        <h3>当前季节</h3>
+        <p>第 22 季「梵高季」先祖、奖励与蜡烛路线</p>
         <span class="card-link">查看攻略 →</span>
       </a>
-      <a href="spirits.html" class="quick-card reveal reveal-delay-3" style="--card-gradient: linear-gradient(90deg, #8DD4A8, #6BB89A); --card-bg-tint: rgba(141, 212, 168, 0.12); --card-icon-color: #4A9B70;">
+      <a href="events.html" class="quick-card reveal reveal-delay-2" style="--card-gradient: linear-gradient(90deg, #FF9F43, #FF6B35); --card-bg-tint: rgba(255, 159, 67, 0.12); --card-icon-color: #E67E22;">
         <div class="icon-wrap">
-          <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-6h2v6zm0-8h-2V7h2v4z"/></svg>
         </div>
-        <h3>装扮图鉴</h3>
-        <p>收集每一件装扮，点亮你的衣柜</p>
+        <h3>限时活动</h3>
+        <p>夏之日、双倍蜡烛等正在进行的活动</p>
+        <span class="card-link">查看攻略 →</span>
+      </a>
+      <a href="spirits.html" class="quick-card reveal reveal-delay-3" style="--card-gradient: linear-gradient(90deg, #A8D0E6, #7BA7C4); --card-bg-tint: rgba(168, 208, 230, 0.12); --card-icon-color: #5A8EA8;">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 2 .8 3.8 2 5.1V18c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-2.9c1.2-1.3 2-3.1 2-5.1 0-4.4-3.6-8-8-8zm-4 16v-1h8v1H8zm6.5-2h-5c-.6-.7-1-1.4-1.3-2h7.6c-.3.6-.7 1.3-1.3 2zm2.3-4H7.2c-.1-.3-.2-.7-.2-1h10c0 .3-.1.7-.2 1z"/></svg>
+        </div>
+        <h3>常驻&复刻先祖</h3>
+        <p>六大地图常驻 + 当前复刻的限时先祖</p>
+        <span class="card-link">查看攻略 →</span>
+      </a>
+      <a href="candles.html" class="quick-card reveal reveal-delay-4" style="--card-gradient: linear-gradient(90deg, #8DD4A8, #6BB89A); --card-bg-tint: rgba(141, 212, 168, 0.12); --card-icon-color: #4A9B70;">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+        </div>
+        <h3>地图攻略</h3>
+        <p>晨岛/云野/雨林/霞谷/暮土/禁阁 一键直达</p>
         <span class="card-link">查看攻略 →</span>
       </a>
     </div>
@@ -269,9 +278,10 @@
       <div class="footer-col">
         <h4>攻略导航</h4>
         <ul>
-          <li><a href="candles.html">今日任务</a></li>
-          <li><a href="spirits.html">先祖回忆</a></li>
-          <li><a href="seasonal.html">季节活动</a></li>
+          <li><a href="candles.html">每日任务</a></li>
+          <li><a href="current-season.html">当前季节</a></li>
+          <li><a href="events.html">限时活动</a></li>
+          <li><a href="spirits.html">常驻&复刻先祖</a></li>
         </ul>
       </div>
       <div class="footer-col">

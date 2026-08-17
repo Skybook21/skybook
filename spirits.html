@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>先祖回忆攻略 | 光遇攻略书</title>
-  <meta name="description" content="光遇全地图先祖回忆攻略，包含位置、动作奖励与解锁路线。">
+  <title>常驻&复刻先祖 | 光遇攻略书</title>
+  <meta name="description" content="光遇全地图常驻先祖回忆攻略，以及当前正在复刻的限时先祖一览。">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -23,9 +23,10 @@
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">首页</a></li>
-      <li><a href="candles.html">今日任务</a></li>
-      <li><a href="spirits.html" class="active">先祖回忆</a></li>
-      <li><a href="seasonal.html">季节活动</a></li>
+      <li><a href="candles.html">每日任务</a></li>
+      <li><a href="current-season.html">当前季节</a></li>
+      <li><a href="events.html">限时活动</a></li>
+      <li><a href="spirits.html" class="active">常驻&复刻先祖</a></li>
     </ul>
     <div class="nav-toggle" id="navToggle">
       <span></span><span></span><span></span>
@@ -36,13 +37,94 @@
 
 <!-- 页面头部 -->
 <header class="page-header">
-  <h1>先祖回忆攻略</h1>
-  <p>找回散落在各地图的先祖记忆，解锁专属表情与装扮</p>
+  <h1>常驻&复刻先祖</h1>
+  <p>六大地图的常驻先祖记忆 + 当前正在复刻的限时先祖，不错过任何一位</p>
 </header>
 
-<!-- 标签导航 -->
+<!-- 复刻先祖 -->
 <section class="section" style="padding-top: var(--space-2xl);">
   <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">限时限地</span>
+      <h2 class="section-title">当前复刻先祖</h2>
+      <p class="section-subtitle">以下先祖正在特定地图限时复刻，错过本次返场需等待下一次</p>
+    </div>
+
+    <div class="spirit-grid">
+      <div class="spirit-card" style="--spirit-color: rgba(255, 183, 77, 0.25);">
+        <div class="spirit-difficulty">
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+        </div>
+        <div class="spirit-header">
+          <div class="spirit-avatar" style="background: linear-gradient(135deg, #ff8e3c, #ffd166);"><svg viewBox="0 0 24 24" fill="white"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div>
+          <div><h3>双人牵手先祖</h3><p class="spirit-type">复刻先祖 · 雨林</p></div>
+        </div>
+        <p class="spirit-desc">复刻地图：<strong>雨林 · 荧光森林</strong>。解锁后可获得「牵手」动作道具 — 与好友面对面点击即可牵手飞行，是本季热门返场。</p>
+        <div class="spirit-rewards">
+          <span class="spirit-reward">牵手动作</span>
+          <span class="spirit-reward">雨林发饰</span>
+          <span class="spirit-reward">荧光面具</span>
+        </div>
+        <p style="margin-top: 12px; font-size: 0.85rem; color: #b8814a;">⏰ 复刻截止：8月24日 24:00</p>
+      </div>
+
+      <div class="spirit-card" style="--spirit-color: rgba(141, 212, 168, 0.25);">
+        <div class="spirit-difficulty">
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+        </div>
+        <div class="spirit-header">
+          <div class="spirit-avatar" style="background: linear-gradient(135deg, #8dd4a8, #6cb88e);"><svg viewBox="0 0 24 24" fill="white"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg></div>
+          <div><h3>指路先祖</h3><p class="spirit-type">复刻先祖 · 晨岛</p></div>
+        </div>
+        <p class="spirit-desc">复刻地图：<strong>晨岛 · 神庙</strong>。解锁后可获得「指路」动作（举手向某一方向指），常用于引导萌新跑图。</p>
+        <div class="spirit-rewards">
+          <span class="spirit-reward">指路动作</span>
+          <span class="spirit-reward">晨岛斗篷</span>
+        </div>
+        <p style="margin-top: 12px; font-size: 0.85rem; color: #b8814a;">⏰ 复刻截止：8月28日 24:00</p>
+      </div>
+
+      <div class="spirit-card" style="--spirit-color: rgba(184, 168, 212, 0.25);">
+        <div class="spirit-difficulty">
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+          <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg>
+        </div>
+        <div class="spirit-header">
+          <div class="spirit-avatar" style="background: linear-gradient(135deg, #b8a8d4, #9277c0);"><svg viewBox="0 0 24 24" fill="white"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg></div>
+          <div><h3>跪坐先祖</h3><p class="spirit-type">复刻先祖 · 禁阁</p></div>
+        </div>
+        <p class="spirit-desc">复刻地图：<strong>禁阁 · 二层平台</strong>。解锁后获得「跪坐」动作，可与好友一起冥想，是日常挂机党最爱。</p>
+        <div class="spirit-rewards">
+          <span class="spirit-reward">跪坐动作</span>
+          <span class="spirit-reward">禁阁面具</span>
+        </div>
+        <p style="margin-top: 12px; font-size: 0.85rem; color: #b8814a;">⏰ 复刻截止：9月2日 24:00</p>
+      </div>
+    </div>
+
+    <div class="tip-box reveal" style="max-width: 800px; margin: var(--space-xl) auto 0;">
+      <svg class="tip-icon" viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 2 .8 3.8 2 5.1V18c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-2.9c1.2-1.3 2-3.1 2-5.1 0-4.4-3.6-8-8-8z"/></svg>
+      <div class="tip-content">
+        <h4>复刻先祖提示</h4>
+        <p>复刻先祖<strong>仅在指定时间</strong>出现在指定地图，复刻结束后无法立刻再次返场（需等待官方排期）。解锁需要找到先祖 → 收集回忆 → 解锁全部动作和装扮，<strong>平均耗时 30-60 分钟</strong>，建议在复刻结束前 2-3 天完成。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 常驻先祖 -->
+<section class="section" style="background: var(--gradient-sky-soft);">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">永久存在</span>
+      <h2 class="section-title">常驻先祖</h2>
+      <p class="section-subtitle">六大地图永久存在的核心先祖，随时可前往解锁</p>
+    </div>
     <div class="tab-nav" id="tabNav">
       <button class="tab-btn active" data-tab="dawn"><span class="tab-dot" style="--tab-color: #F4C97A;"></span>晨岛</button>
       <button class="tab-btn" data-tab="prairie"><span class="tab-dot" style="--tab-color: #8DD4A8;"></span>云野</button>
@@ -526,17 +608,21 @@
       <div class="footer-col">
         <h4>攻略导航</h4>
         <ul>
-          <li><a href="candles.html">今日任务</a></li>
-          <li><a href="spirits.html">先祖回忆</a></li>
-          <li><a href="seasonal.html">季节活动</a></li>
+          <li><a href="candles.html">每日任务</a></li>
+          <li><a href="current-season.html">当前季节</a></li>
+          <li><a href="events.html">限时活动</a></li>
+          <li><a href="spirits.html">常驻&复刻先祖</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>地图攻略</h4>
         <ul>
-          <li><a href="spirits.html">晨岛</a></li>
-          <li><a href="spirits.html">云野</a></li>
-          <li><a href="spirits.html">雨林</a></li>
+          <li><a href="candles.html">晨岛</a></li>
+          <li><a href="candles.html">云野</a></li>
+          <li><a href="candles.html">雨林</a></li>
+          <li><a href="candles.html">霞谷</a></li>
+          <li><a href="candles.html">暮土</a></li>
+          <li><a href="candles.html">禁阁</a></li>
         </ul>
       </div>
       <div class="footer-col">
