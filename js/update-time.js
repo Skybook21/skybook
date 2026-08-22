@@ -5,8 +5,8 @@
 
 window.LAST_UPDATED = {
   'index':           '2026年8月22日 13:02',
-  'candles':         '2026年8月22日 13:02',
-  'candles-draft':   '2026年8月22日 13:02',
+  'candles':         '2026年8月22日 18:24',
+  'candles-draft':   '2026年8月22日 18:24',
   'current-season':  '2026年8月22日 13:02',
   'events':          '2026年8月22日 13:02',
   'spirits':         '2026年8月22日 13:02',
